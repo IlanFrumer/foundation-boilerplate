@@ -11,6 +11,7 @@ module.exports = (grunt) ->
 
         files:
           "dist/css/app.css": "src/scss/app.scss"
+          "dist/css/screen.css": "src/scss/screen.scss"
 
     jade:
       dev:
@@ -18,7 +19,7 @@ module.exports = (grunt) ->
           pretty: true
 
         expand: true
-        cwd: 'src/'
+        cwd: 'src/jade/'
         src: ['{,**/}*.jade']
         dest: 'dist/'
         ext: '.html'
