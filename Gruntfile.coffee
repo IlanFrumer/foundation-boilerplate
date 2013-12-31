@@ -37,7 +37,7 @@ module.exports = (grunt) ->
         files: ["Gruntfile.coffee"]
 
       jade: 
-        files: ['{,**/}*.jade']
+        files: ['src/{,**/}*.jade']
         tasks: ["jade"]
 
       sass:
